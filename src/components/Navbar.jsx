@@ -9,7 +9,7 @@ useGSAP(()=> {
       scroll: "body",
       trigger: "nav",
       start: "bottom top",
-      scrub: true
+      scrub: true,
       
     }
   });
@@ -20,7 +20,7 @@ useGSAP(()=> {
     { backgroundColor: "#00000000",},
     { backgroundColor: "#00000050",
       duration: 1,
-      backdropFilter: "blur(10px)",
+      backdropFilter: "blur(15px)",
       ease: "power1.inOut"
      });
 })

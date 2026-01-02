@@ -100,7 +100,7 @@ body {
         }
 
         .right-leaf {
-            @apply absolute right-0 md:bottom-0 xl:top-0 2xl:top-12 top-1/2 md:w-fit w-24;
+            @apply absolute right-0 md:bottom-0 xl:top-10 2xl:top-12 top-1/2 md:w-fit w-24;
         }
 
         .body {
@@ -257,7 +257,7 @@ body {
 
         .masked-container {
             h2 {
-                @apply text-4xl md:text-5xl font-modern-negra text-center mb-10 text-white mt-32;
+                @apply text-4xl md:text-5xl font-modern-negra text-center mb-10 text-white mt-52;
             }
 
             div {

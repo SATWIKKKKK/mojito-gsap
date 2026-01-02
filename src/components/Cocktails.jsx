@@ -7,9 +7,10 @@ const Cocktails = () => {
 	const parallaxTimeline = gsap.timeline({
 	 scrollTrigger: {
 		trigger: '#cocktails',
-		start: 'top 20%',
+		start: 'top 30%',
 		end: 'bottom 80%',
 		scrub: true,
+
         
 	 }
 	})
@@ -19,12 +20,12 @@ const Cocktails = () => {
 		x: -100, y: 100, duration: 1.5
 	})
 	 .from('#c-right-leaf', {
-		x: 100, y: 100, duration: 1.5
+		x: 100, y: 100, duration: 2,
 	})
  })
  
   return (
-  <section id="cocktails" className="noisy">
+  <section id="cocktails">
 	 <img src="/images/cocktail-left-leaf.png" alt="l-leaf" id="c-left-leaf" />
 	 <img src="/images/cocktail-right-leaf.png" alt="r-leaf" id="c-right-leaf" />
 	 

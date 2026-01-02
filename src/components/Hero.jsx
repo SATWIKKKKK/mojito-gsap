@@ -44,10 +44,11 @@ const Hero = () => {
 		start: "top top",
 		end: "bottom top",
 		scrub: true,
+		
 	 },
 	})
-	.to(".right-leaf", { y: 200 }, 0)
-	.to(".left-leaf", { y: -200 }, 0)
+	.to(".right-leaf", { y: -100 }, 0)
+	.to(".left-leaf", { y: -100 }, 0)
 	.to(".arrow", { y: 100 }, 0);
 	
 	const startValue = isMobile ? "top 50%" : "center 50%";
@@ -72,7 +73,7 @@ const Hero = () => {
  
  return (
 	<>
-	 <section id="hero" className="noisy">
+	 <section id="hero" >
 		<h1 className="title mt-20 ">MOJITO</h1>
 		
 		<img
