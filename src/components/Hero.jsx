@@ -74,7 +74,7 @@ const Hero = () => {
  return (
 	<>
 	 <section id="hero" >
-		<h1 className="title mt-20 ">MOJITO</h1>
+		<h1 className="title">MOJITO</h1>
 		
 		<img
 		 src="/images/hero-left-leaf.png"
@@ -88,12 +88,11 @@ const Hero = () => {
 		/>
 		
 		<div className="body">
-		 {/* <img src="/images/arrow.png" alt="arrow" className="arrow" /> */}
 		 
 		 <div className="content">
-			<div className="space-y-5 hidden md:block">
-			 <p>Cool. Crisp. Classic.</p>
-			 <p className="subtitle">
+			<div className="space-y-3 sm:space-y-4 md:space-y-5 hidden md:block">
+			 <p className="text-sm sm:text-base md:text-3xl hidden md:block">Cool. Crisp. Classic.</p>
+			 <p className="subtitle md:text-5xl hidden md:block">
 				Sip the Spirit <br /> of Summer
 			 </p>
 			</div>

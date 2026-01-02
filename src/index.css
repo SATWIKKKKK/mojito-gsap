@@ -68,19 +68,19 @@ body {
         @apply fixed z-50 w-full;
 
         div {
-            @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
+            @apply flex md:flex-row flex-col md:justify-between items-center gap-3 md:gap-5 py-3 md:py-5 lg:px-5 px-4 container mx-auto;
         }
 
         p {
-            @apply font-modern-negra text-3xl -mb-2;
+            @apply font-modern-negra text-2xl md:text-3xl -mb-2;
         }
 
         a {
-            @apply cursor-pointer text-nowrap md:text-base text-sm;
+            @apply cursor-pointer text-nowrap text-xs sm:text-sm md:text-base;
         }
 
         ul {
-            @apply flex-center lg:gap-12 gap-7;
+            @apply flex-center gap-3 sm:gap-5 md:gap-7 lg:gap-12 flex-wrap;
         }
     }
 
@@ -92,40 +92,40 @@ body {
         @apply relative z-10 min-h-dvh w-full border border-transparent;
 
         h1 {
-            @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
+            @apply mt-32 sm:mt-36 md:mt-32 text-6xl sm:text-7xl md:text-8xl lg:text-[15vw] xl:text-[20vw] leading-none text-center font-modern-negra;
         }
 
         .left-leaf {
-            @apply absolute left-0 md:top-20 xl:top-10 2xl:top-52 md:bottom-auto -bottom-20 md:w-fit w-1/3;
+            @apply absolute left-0 md:top-20 xl:top-10 2xl:top-52 md:bottom-auto -bottom-20 md:w-auto w-24 sm:w-32 md:w-40 lg:w-fit;
         }
 
         .right-leaf {
-            @apply absolute right-0 md:bottom-0 xl:top-10 2xl:top-12 top-1/2 md:w-fit w-24;
+            @apply absolute right-0 md:bottom-0 xl:top-10 2xl:top-12 top-1/2 md:w-auto w-16 sm:w-20 md:w-32 lg:w-fit;
         }
 
         .body {
-            @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-5;
+            @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 bottom-10 md:bottom-auto md:top-[30vh] flex justify-between items-end px-4 sm:px-5;
 
             .content {
-                @apply flex lg:flex-row flex-col w-full gap-10 justify-between items-center lg:items-end mx-auto;
+                @apply flex lg:flex-row flex-col w-full gap-5 sm:gap-8 md:gap-10 justify-between items-center lg:items-end mx-auto;
 
                 p:nth-of-type(2) {
-                    @apply font-modern-negra text-6xl text-yellow max-w-xl;
+                    @apply font-modern-negra text-4xl sm:text-5xl md:text-6xl text-yellow max-w-xl;
                 }
 
                 p:last-of-type {
-                    @apply 2xl:text-start text-center;
+                    @apply 2xl:text-start text-center text-sm sm:text-base;
                 }
 
                 .view-cocktails {
-                    @apply space-y-5 text-lg lg:max-w-2xs md:max-w-xs w-full;
+                    @apply space-y-3 sm:space-y-5 text-sm sm:text-base md:text-lg lg:max-w-2xs md:max-w-xs w-full;
 
                     p {
                         @apply text-left;
                     }
 
                     a {
-                        @apply font-semibold opacity-80 2xl:text-start text-center hover:text-yellow;
+                        @apply font-semibold opacity-80 2xl:text-start text-center hover:text-yellow block;
                     }
                 }
             }
@@ -133,51 +133,51 @@ body {
     }
 
     video {
-        @apply w-full md:h-[80%] h-1/2 absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
+        @apply w-full h-1/2 sm:h-[60%] md:h-[70%] lg:h-[80%] absolute bottom-0 left-0 md:object-contain object-bottom object-cover;
     }
 
     #cocktails {
         @apply relative min-h-dvh w-full overflow-hidden;
 
         #c-left-leaf {
-            @apply absolute left-0 md:bottom-0 md:top-auto -top-20 md:w-fit w-1/3;
+            @apply absolute left-0 md:bottom-0 md:top-auto -top-20 md:w-auto w-20 sm:w-24 md:w-32 lg:w-fit;
         }
 
         #c-right-leaf {
-            @apply absolute right-0 md:bottom-0 md:top-auto -top-20 md:w-fit w-1/3;
+            @apply absolute right-0 md:bottom-0 md:top-auto -top-20 md:w-auto w-20 sm:w-24 md:w-32 lg:w-fit;
         }
 
         .list {
-            @apply container mx-auto relative z-10 flex md:flex-row flex-col justify-between items-start gap-20 pt-40 2xl:px-0 px-5;
+            @apply container mx-auto relative z-10 flex md:flex-row flex-col justify-between items-start gap-10 sm:gap-14 md:gap-20 pt-28 sm:pt-36 md:pt-40 2xl:px-0 px-4 sm:px-5;
 
             .popular {
-                @apply space-y-8 w-full md:w-fit;
+                @apply space-y-6 sm:space-y-8 w-full md:w-fit;
             }
 
             .loved {
-                @apply space-y-8 w-full md:w-fit pb-20 md:pb-0;
+                @apply space-y-6 sm:space-y-8 w-full md:w-fit pb-10 sm:pb-16 md:pb-20 lg:pb-0;
             }
 
             h2 {
-                @apply text-xl font-medium;
+                @apply text-base sm:text-lg md:text-xl font-medium;
             }
 
             ul {
-                @apply space-y-8;
+                @apply space-y-5 sm:space-y-6 md:space-y-8;
 
                 li {
-                    @apply flex justify-between items-start;
+                    @apply flex justify-between items-start gap-2 sm:gap-4;
 
                     h3 {
-                        @apply font-modern-negra 2xl:text-3xl text-xl text-yellow;
+                        @apply font-modern-negra text-lg sm:text-xl md:text-2xl lg:text-3xl text-yellow;
                     }
 
                     p {
-                        @apply text-sm;
+                        @apply text-xs sm:text-sm;
                     }
 
                     span {
-                        @apply text-xl font-medium;
+                        @apply text-base sm:text-lg md:text-xl font-medium whitespace-nowrap;
                     }
                 }
             }
@@ -185,41 +185,41 @@ body {
     }
 
     #about {
-        @apply min-h-screen py-28 2xl:px-0 px-5 container mx-auto;
+        @apply min-h-screen py-16 sm:py-20 md:py-28 2xl:px-0 px-4 sm:px-5 container mx-auto;
 
         .content {
-            @apply grid grid-cols-1 lg:grid-cols-12 gap-5;
+            @apply grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 md:gap-5;
 
             h2 {
-                @apply text-5xl md:text-6xl font-modern-negra max-w-lg;
+                @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-modern-negra max-w-lg;
             }
 
             .sub-content {
-                @apply md:col-span-4 space-y-5 flex flex-col justify-between;
+                @apply md:col-span-4 space-y-4 sm:space-y-5 flex flex-col justify-between;
 
                 p {
-                    @apply text-lg;
+                    @apply text-sm sm:text-base md:text-lg;
                 }
 
                 div {
-                    @apply flex flex-col justify-between md:gap-2 gap-5;
+                    @apply flex flex-col justify-between gap-3 sm:gap-4 md:gap-2 lg:gap-5;
 
                     span {
-                        @apply text-yellow font-bold text-5xl;
+                        @apply text-yellow font-bold text-3xl sm:text-4xl md:text-5xl;
                     }
                 }
             }
         }
 
         .badge {
-            @apply inline-block rounded-full bg-white text-black px-4 py-2 text-sm font-medium mb-8;
+            @apply inline-block rounded-full bg-white text-black px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium mb-6 sm:mb-8;
         }
 
         .top-grid {
-            @apply grid grid-cols-1 xl:grid-cols-12 gap-5 mb-5 md:px-0 px-5;
+            @apply grid grid-cols-1 xl:grid-cols-12 gap-3 sm:gap-4 md:gap-5 mb-3 sm:mb-4 md:mb-5 md:px-0 px-4 sm:px-5;
 
             > div {
-                @apply rounded-3xl overflow-hidden h-72 relative;
+                @apply rounded-2xl sm:rounded-3xl overflow-hidden h-52 sm:h-60 md:h-72 relative;
             }
 
             img {
@@ -228,10 +228,10 @@ body {
         }
 
         .bottom-grid {
-            @apply grid grid-cols-1 md:grid-cols-12 gap-5 md:px-0 px-5;
+            @apply grid grid-cols-1 md:grid-cols-12 gap-3 sm:gap-4 md:gap-5 md:px-0 px-4 sm:px-5;
 
             > div {
-                @apply rounded-3xl overflow-hidden h-72 relative;
+                @apply rounded-2xl sm:rounded-3xl overflow-hidden h-52 sm:h-60 md:h-72 relative;
             }
 
             img {
@@ -241,55 +241,55 @@ body {
     }
 
     #art {
-        @apply flex-center flex-col min-h-dvh p-5 mt-20 relative radial-gradient;
+        @apply flex-center flex-col min-h-dvh p-4 sm:p-5 mt-12 sm:mt-16 md:mt-20 relative radial-gradient;
 
         h2 {
-            @apply relative md:text-[20vw] text-8xl text-nowrap leading-none font-modern-negra text-center text-[#505050] mb-8;
+            @apply relative text-6xl sm:text-7xl md:text-8xl lg:text-[15vw] xl:text-[20vw] text-nowrap leading-none font-modern-negra text-center text-[#505050] mb-6 sm:mb-8;
         }
 
         .content {
-            @apply flex md:flex-row flex-col justify-between md:mb-16 md:mt-0 mt-40 gap-10;
+            @apply flex md:flex-row flex-col justify-between md:mb-16 md:mt-0 mt-28 sm:mt-32 md:mt-40 gap-6 sm:gap-8 md:gap-10;
         }
 
         .cocktail-img {
-            @apply md:w-[60vw] w-full h-[50vh] md:h-[70vh] rounded-4xl overflow-hidden absolute top-0 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2;
+            @apply w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] h-[40vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] rounded-3xl sm:rounded-4xl overflow-hidden absolute top-0 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2;
         }
 
         .masked-container {
             h2 {
-                @apply text-4xl md:text-5xl font-modern-negra text-center mb-10 text-white mt-52;
+                @apply text-3xl sm:text-4xl md:text-5xl font-modern-negra text-center mb-8 sm:mb-10 text-white mt-36 sm:mt-44 md:mt-52;
             }
 
             div {
-                @apply opacity-0 md:px-0 px-5 space-y-5 absolute md:bottom-5 bottom-52 left-1/2 -translate-x-1/2;
+                @apply opacity-0 px-4 sm:px-5 md:px-0 space-y-3 sm:space-y-4 md:space-y-5 absolute bottom-32 sm:bottom-40 md:bottom-5 left-1/2 -translate-x-1/2 w-full max-w-4xl;
 
                 h3 {
-                    @apply md:text-5xl text-2xl text-center font-serif md:w-full w-80 text-white;
+                    @apply text-xl sm:text-2xl md:text-4xl lg:text-5xl text-center font-serif w-full text-white;
                 }
 
                 p {
-                    @apply text-lg text-center;
+                    @apply text-sm sm:text-base md:text-lg text-center;
                 }
             }
         }
     }
 
     #menu {
-        @apply relative w-full md:mt-40 mt-0 2xl:px-0 px-5 py-20 radial-gradient;
+        @apply relative w-full mt-0 sm:mt-20 md:mt-40 2xl:px-0 px-4 sm:px-5 py-12 sm:py-16 md:py-20 radial-gradient;
 
         #m-left-leaf {
-            @apply object-contain absolute -bottom-20 left-0 md:w-fit w-1/3;
+            @apply object-contain absolute -bottom-20 left-0 w-20 sm:w-24 md:w-32 lg:w-fit;
         }
 
         #m-right-leaf {
-            @apply object-contain absolute -top-40 right-0 md:w-fit w-1/4;
+            @apply object-contain absolute -top-40 right-0 w-16 sm:w-20 md:w-24 lg:w-fit;
         }
 
         .cocktail-tabs {
-            @apply grid md:grid-cols-4 grid-cols-2 md:gap-20 gap-10 sm:mb-32 mb-20 relative z-10 md:max-w-6xl md:mx-auto;
+            @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 sm:gap-8 md:gap-12 lg:gap-20 mb-12 sm:mb-20 md:mb-32 relative z-10 md:max-w-6xl md:mx-auto;
 
             button {
-                @apply md:text-3xl text-xl pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b-1 transition-colors font-modern-negra;
+                @apply text-base sm:text-lg md:text-2xl lg:text-3xl pb-1.5 sm:pb-2 cursor-pointer hover:text-yellow hover:border-yellow border-b-1 transition-colors font-modern-negra;
             }
         }
 
@@ -297,80 +297,92 @@ body {
             @apply flex flex-col justify-between items-center container mx-auto relative;
 
             .arrows {
-                @apply flex items-center justify-between w-full absolute;
+                @apply flex items-center justify-between w-full absolute z-10;
 
                 button {
-                    @apply text-white hover:text-yellow cursor-pointer transition-colors max-w-36;
+                    @apply text-white hover:text-yellow cursor-pointer transition-colors max-w-20 sm:max-w-28 md:max-w-36;
 
                     span {
-                        @apply text-3xl font-modern-negra leading-none hidden md:block;
+                        @apply text-xl sm:text-2xl md:text-3xl font-modern-negra leading-none hidden md:block;
+                    }
+
+                    img {
+                        @apply w-8 sm:w-10 md:w-auto;
                     }
                 }
             }
         }
 
         .cocktail {
-            @apply flex-center mt-10;
+            @apply flex-center mt-6 sm:mt-8 md:mt-10;
 
             img {
-                @apply object-contain h-[60vh];
+                @apply object-contain h-[40vh] sm:h-[50vh] md:h-[60vh];
             }
         }
 
         .recipe {
-            @apply flex max-md:flex-col gap-10 md:items-center justify-between w-full lg:absolute bottom-0;
+            @apply flex max-md:flex-col gap-6 sm:gap-8 md:gap-10 md:items-center justify-between w-full lg:absolute bottom-0;
 
             .info {
-                @apply space-y-4 lg:translate-y-20;
+                @apply space-y-2 sm:space-y-3 md:space-y-4 lg:translate-y-20;
+
+                p {
+                    @apply text-xs sm:text-sm md:text-base;
+                }
 
                 #title {
-                    @apply font-modern-negra md:text-6xl text-3xl text-yellow max-w-40;
+                    @apply font-modern-negra text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-yellow max-w-40;
                 }
             }
 
             .details {
-                @apply space-y-5 md:max-w-md text-left;
+                @apply space-y-3 sm:space-y-4 md:space-y-5 md:max-w-md text-left;
 
                 h2 {
-                    @apply md:text-5xl text-3xl font-serif;
+                    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif;
                 }
 
                 p {
-                    @apply md:text-lg pe-5;
+                    @apply text-sm sm:text-base md:text-lg pe-3 sm:pe-5;
                 }
             }
         }
     }
 
     #contact {
-        @apply relative md:mt-20 mt-0 px-4 text-center w-full overflow-hidden radial-gradient;
+        @apply relative mt-0 sm:mt-10 md:mt-20 px-4 sm:px-5 text-center w-full overflow-hidden radial-gradient;
 
         #f-left-leaf {
-            @apply absolute bottom-0 left-0 pointer-events-none lg:w-fit w-1/3;
+            @apply absolute bottom-0 left-0 pointer-events-none w-20 sm:w-24 md:w-32 lg:w-fit;
         }
 
         #f-right-leaf {
-            @apply absolute top-0 right-0 pointer-events-none hidden lg:block;
+            @apply absolute top-0 right-0 pointer-events-none hidden md:block w-32 lg:w-auto;
         }
 
         .content {
-            @apply container mx-auto lg:py-14 2xl:py-32 py-16 flex flex-col justify-between gap-10 min-h-dvh;
+            @apply container mx-auto py-12 sm:py-16 md:py-14 lg:py-20 2xl:py-32 flex flex-col justify-between gap-6 sm:gap-8 md:gap-10 min-h-dvh;
 
             h2 {
-                @apply lg:text-6xl 2xl:text-8xl text-5xl font-modern-negra md:translate-y-0 translate-y-5;
+                @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl font-modern-negra translate-y-2 sm:translate-y-3 md:translate-y-5 lg:translate-y-0;
             }
 
             h3 {
-                @apply uppercase xl:text-base 2xl:text-lg text-base mb-2;
+                @apply uppercase text-xs sm:text-sm md:text-base xl:text-base 2xl:text-lg mb-1.5 sm:mb-2;
             }
 
             p {
-                @apply lg:text-2xl 2xl:text-3xl text-sm;
+                @apply text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl;
+            }
+
+            > div {
+                @apply space-y-2 sm:space-y-3;
             }
         }
 
         .drink-img {
-            @apply absolute bottom-0 right-0 lg:w-96 w-1/3 pointer-events-none;
+            @apply absolute bottom-0 right-0 w-24 sm:w-32 md:w-40 lg:w-96 pointer-events-none;
         }
     }
 }

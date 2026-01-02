@@ -32,8 +32,8 @@ useGSAP(()=> {
   return (
     <nav>
         <div>
-            <a href="#home" className="flex items-center gap-2">
-            <img src="/images/logo.png" alt="logo" />
+            <a href="#home" className="flex items-center gap-1.5 sm:gap-2">
+            <img src="/images/logo.png" alt="logo" className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10" />
              <p>Velvet Pour</p>   
             </a>
 

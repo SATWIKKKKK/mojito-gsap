@@ -36,7 +36,7 @@ const Cocktails = () => {
 		 <ul>
 			{cocktailLists.map(({ name, country, detail, price }) => (
 			 <li key={name}>
-				<div className="md:me-28">
+				<div className="md:me-20 lg:me-28 flex-1">
 				 <h3>{name}</h3>
 				 <p>{country} | {detail}</p>
 				</div>
@@ -52,7 +52,7 @@ const Cocktails = () => {
 		 <ul>
 			{mockTailLists.map(({ name, country, detail, price }) => (
 			 <li key={name}>
-				<div className="me-28">
+				<div className="md:me-20 lg:me-28 flex-1">
 				 <h3>{name}</h3>
 				 <p>{country} | {detail}</p>
 				</div>

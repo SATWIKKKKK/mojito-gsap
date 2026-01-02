@@ -26,9 +26,9 @@ const About = () => {
  
  return (
 	<div id="about" >
-	 <div className="mb-16 md:px-0 px-5">
+	 <div className="mb-12 sm:mb-14 md:mb-16 px-4 sm:px-5 md:px-0">
 		<div className="content">
-		 <div className="md:col-span-8">
+		 <div className="lg:col-span-8">
 			<p className="badge">Best Cocktails</p>
 			<h2>
 			 Where every detail matters <span className="text-white">-</span>
@@ -42,10 +42,10 @@ const About = () => {
 			</p>
 			
 			<div>
-			 <p className="md:text-3xl text-xl font-bold">
+			 <p className="text-xl sm:text-2xl md:text-3xl font-bold">
 				<span>4.5</span>/5
 			 </p>
-			 <p className="text-sm text-white-100">
+			 <p className="text-xs sm:text-sm text-white-100">
 				More than +12000 customers
 			 </p>
 			</div>

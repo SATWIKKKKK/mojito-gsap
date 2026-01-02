@@ -31,11 +31,11 @@ const Art = () => {
 		<h2 className="will-fade">The ART</h2>
 		
 		<div className="content">
-		 <ul className="space-y-4 will-fade">
+		 <ul className="space-y-3 sm:space-y-4 will-fade">
 			{goodLists.map((feature, index) => (
 			 <li key={index} className="flex items-center gap-2">
-				<img src="/images/check.png" alt="check" />
-				<p>{feature}</p>
+				<img src="/images/check.png" alt="check" className="w-5 h-5 sm:w-6 sm:h-6" />
+				<p className="text-sm sm:text-base">{feature}</p>
 			 </li>
 			))}
 		 </ul>
@@ -48,11 +48,11 @@ const Art = () => {
 			/>
 		 </div>
 		 
-		 <ul className="space-y-4 will-fade">
+		 <ul className="space-y-3 sm:space-y-4 will-fade">
 			{featureLists.map((feature, index) => (
 			 <li key={index} className="flex items-center justify-start gap-2">
-				<img src="/images/check.png" alt="check" />
-				<p className="md:w-fit w-60">{feature}</p>
+				<img src="/images/check.png" alt="check" className="w-5 h-5 sm:w-6 sm:h-6" />
+				<p className="text-sm sm:text-base w-full">{feature}</p>
 			 </li>
 			))}
 		 </ul>
