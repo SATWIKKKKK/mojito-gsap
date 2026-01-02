@@ -9,6 +9,7 @@ useGSAP(()=> {
       scroll: "body",
       trigger: "nav",
       start: "bottom top",
+      scrub: true
       
     }
   });
